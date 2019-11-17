@@ -1,6 +1,6 @@
 # Git Basics Cheatsheet
 
-A Git 101, with a list of my most used Git commands among other useful info when getting started with Git.
+A list of my most used Git commands and other useful info when getting started with Git.
 
 ## GLOSSARY
 
@@ -114,23 +114,23 @@ See [more examples](https://github.com/github/gitignore)
 
 The following platforms can be used to host your Git repositories.
 
-| NAME                                 | PRICE |
-| ------------------------------------ | ----- |
-| [Github](https://desktop.github.com) | Free  |
-| [Gitlab](https://about.gitlab.com)   | Free  |
-| [Bitbucket](https://bitbucket.org)   | Free  |
+| NAME                               | PRICE |
+| ---------------------------------- | ----- |
+| [Github](https://github.com)       | Free  |
+| [Gitlab](https://gitlab.com)       | Free  |
+| [Bitbucket](https://bitbucket.org) | Free  |
 
 ## GRAPHICAL USER INTERFACE (GUI) CLIENTS
 
 Is the command-line not for you? Try one of the following GUIs.
 
-| NAME                                         | OS                | PRICE         |
-| -------------------------------------------- | ----------------- | ------------- |
-| [Github](https://desktop.github.com)         | Mac and Windows   | Free          |
-| [Source Tree](https://www.sourcetreeapp.com) | Mac and Windows   | Free          |
-| [Tower](https://www.git-tower.com)           | MacOS and Windows | ~€59 per year |
+| NAME                                         | OS                | PRICE           |
+| -------------------------------------------- | ----------------- | --------------- |
+| [Github](https://desktop.github.com)         | Mac and Windows   | Free            |
+| [Source Tree](https://www.sourcetreeapp.com) | Mac and Windows   | Free            |
+| [Tower](https://www.git-tower.com)           | MacOS and Windows | 59 USD per year |
 
-## SOURCE
+## RESOURCES
 
 -   [GitBook](https://book.git-scm.com)
 -   [Git Flow](https://guides.github.com/introduction/flow/)
