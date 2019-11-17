@@ -21,22 +21,22 @@ A Git 101, with a list of my most used Git commands among other useful info when
 
 | Key/Command                            | Description                                         |
 | -------------------------------------- | --------------------------------------------------- |
-| git config --global user.name <name>   | Set author name to be used for all commits          |
-| git config --global user.email <email> | Set author email to be used for all commits         |
+| git config --global user.name [name]   | Set author name to be used for all commits          |
+| git config --global user.email [email] | Set author email to be used for all commits         |
 | git config color.ui true               | Enables helpful colorization of command line output |
 
 ## CORE COMMANDS
 
 | Key/Command               | Description                                              |
 | ------------------------- | -------------------------------------------------------- |
-| git init <directory>      | Creates new local repository                             |
-| git clone <repo>          | Creates local copy of remote repository                  |
-| git add <directory>       | Stages specific <directory>                              |
-| git add <file>            | Stages specific <file>                                   |
+| git init [directory]      | Creates new local repository                             |
+| git clone [repo]          | Creates local copy of remote repository                  |
+| git add [directory]       | Stages specific [directory]                              |
+| git add [file]            | Stages specific [file]                                   |
 | git add -A                | Stages all changed files                                 |
 | git add .                 | Stages new and changed files, NOT deleted files          |
 | git add -u                | Stages changed and deleted files, NOT new files          |
-| git commit -m "<message>" | Commit everything that is staged                         |
+| git commit -m "[message]" | Commit everything that is staged                         |
 | git status                | Shows status of changes as untracked, modified or staged |
 
 ## SYNCHRONIZE CHANGES
@@ -52,41 +52,41 @@ A Git 101, with a list of my most used Git commands among other useful info when
 
 | Key/Command               | Description                                                                                 |
 | ------------------------- | ------------------------------------------------------------------------------------------- |
-| git checkout -- <file>    | Replace file with contents from HEAD                                                        |
-| git revert <commit>       | Create new commit that undoes changes made in <commit>, then apply it to the current branch |
-| git reset <file>          | Remove <file> from staging area                                                             |
+| git checkout -- [file]    | Replace file with contents from HEAD                                                        |
+| git revert [commit]       | Create new commit that undoes changes made in [commit], then apply it to the current branch |
+| git reset [file]          | Remove [file] from staging area                                                             |
 | git reset --hard HEAD     | Removes all local changes in working directory                                              |
-| git reset --hard <commit> | Reset your HEAD pointer to previous commit and discard all changes since then               |
+| git reset --hard [commit] | Reset your HEAD pointer to previous commit and discard all changes since then               |
 
 ## BRANCHES
 
 | Key/Command              | Description                        |
 | ------------------------ | ---------------------------------- |
-| git branch <branch>      | Create a new branch                |
-| git checkout <branch>    | Switch to that branch              |
-| git checkout <branch> -b | Create and checkout new branch     |
-| git merge <branch>       | Merge <branch> into current branch |
-| git branch -d <branch>   | Deletes the <branch>               |
-| git push origin <branch> | Push <branch> to remote            |
+| git branch [branch]      | Create a new branch                |
+| git checkout [branch]    | Switch to that branch              |
+| git checkout [branch] -b | Create and checkout new branch     |
+| git merge [branch]       | Merge [branch] into current branch |
+| git branch -d [branch]   | Deletes the [branch]               |
+| git push origin [branch] | Push [branch] to remote            |
 
 ## REMOTE REPOSITORIES
 
-| Key/Command                 | Description                        |
-| --------------------------- | ---------------------------------- |
-| git remote add <name> <url> | Switch to that branch              |
-| git fetch <remote> <branch> | Merge <branch> into current branch |
-| git pull <remote>           | Switch to that branch              |
-| git push <remote> <branch>  | Create and checkout new branch     |
+| Key/Command                | Description                        |
+| -------------------------- | ---------------------------------- |
+| git remote add [name][url] | Switch to that branch              |
+| git fetch [remote][branch] | Merge [branch] into current branch |
+| git pull [remote]          | Switch to that branch              |
+| git push [remote][branch]  | Create and checkout new branch     |
 
 ## HISTORY
 
 | Key/Command              | Description                                                      |
 | ------------------------ | ---------------------------------------------------------------- |
 | git log                  | Lists version history for the current branch                     |
-| git log --author=<name>  | Lists version history for the current branch from certain author |
+| git log --author=[name]  | Lists version history for the current branch from certain author |
 | git log --pretty=oneline | Lists compressed version history for the current branch          |
-| git show <commit>        | Outputs metadata and content changes of the specified commit     |
-| git blame <file>         | Shows who changed what and when in file                          |
+| git show [commit]        | Outputs metadata and content changes of the specified commit     |
+| git blame [file]         | Shows who changed what and when in file                          |
 
 ## THE .gitignore FILE
 
