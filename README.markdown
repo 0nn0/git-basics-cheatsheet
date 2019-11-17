@@ -2,7 +2,7 @@
 
 A list of my most used Git commands and other useful info when getting started with Git.
 
-Tip: There's also a list of my most used command and shortcuts for the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet).
+*Tip: There's also a list of my most used command and shortcuts for the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet).*
 
 ## GLOSSARY
 
