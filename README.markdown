@@ -1,10 +1,17 @@
 # Git Basics Cheatsheet
 
-A list of my most used Git commands and other useful info when getting started with Git.
+This cheatsheet is a list of our most used Git commands and useful information for those who are getting started.
 
-*Tip: There's also a list of my most used command and shortcuts for the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet).*
+It is available in a few languages. Since the translation rely on volunteers, the content between the available languages may vary. Choose one below:
 
-## GLOSSARY
+- [English Version](#english-version)
+- [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
+
+*In case you've missed, there's a list of our most used commands and shortcuts in the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet).*
+
+## English Version
+
+### GLOSSARY
 
 | Keywords                | Description                                                                                                             |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -19,7 +26,7 @@ A list of my most used Git commands and other useful info when getting started w
 | pull request            | A method of submitting contributions to a repository                                                                    |
 | HEAD                    | Representing your current working directory                                                                             |
 
-## CONFIGURE
+### CONFIGURE
 
 | Key/Command                            | Description                                         |
 | -------------------------------------- | --------------------------------------------------- |
@@ -27,7 +34,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git config --global user.email [email] | Set author email to be used for all commits         |
 | git config color.ui true               | Enables helpful colorization of command line output |
 
-## CORE COMMANDS
+### CORE COMMANDS
 
 | Key/Command               | Description                                              |
 | ------------------------- | -------------------------------------------------------- |
@@ -41,7 +48,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git commit -m "[message]" | Commit everything that is staged                         |
 | git status                | Shows status of changes as untracked, modified or staged |
 
-## SYNCHRONIZE CHANGES
+### SYNCHRONIZE CHANGES
 
 | Key/Command | Description                                                                                                                                        |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +57,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git pull    | Updates local working branch with all new commits from the corresponding remote branch. `git pull` is a combination of `git fetch` and `git merge` |
 | git push    | Pushes all local branch commits to remote repository                                                                                               |
 
-## UNDO CHANGES
+### UNDO CHANGES
 
 | Key/Command               | Description                                                                                 |
 | ------------------------- | ------------------------------------------------------------------------------------------- |
@@ -60,7 +67,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git reset --hard HEAD     | Removes all local changes in working directory                                              |
 | git reset --hard [commit] | Reset your HEAD pointer to previous commit and discard all changes since then               |
 
-## BRANCHES
+### BRANCHES
 
 | Key/Command              | Description                        |
 | ------------------------ | ---------------------------------- |
@@ -71,7 +78,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git branch -d [branch]   | Deletes the [branch]               |
 | git push origin [branch] | Push [branch] to remote            |
 
-## REMOTE REPOSITORIES
+### REMOTE REPOSITORIES
 
 | Key/Command                | Description                        |
 | -------------------------- | ---------------------------------- |
@@ -80,7 +87,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git pull [remote]          | Switch to that branch              |
 | git push [remote][branch]  | Create and checkout new branch     |
 
-## HISTORY
+### HISTORY
 
 | Key/Command              | Description                                                      |
 | ------------------------ | ---------------------------------------------------------------- |
@@ -90,7 +97,7 @@ A list of my most used Git commands and other useful info when getting started w
 | git show [commit]        | Outputs metadata and content changes of the specified commit     |
 | git blame [file]         | Shows who changed what and when in file                          |
 
-## THE .gitignore FILE
+### THE .gitignore FILE
 
 You can list files/directories that you want to explicitely exclude from Git in a `.gitignore` file. This file should be placed at the root of your repository.
 
@@ -112,7 +119,7 @@ dist/
 
 See [more examples](https://github.com/github/gitignore)
 
-## PLATFORMS
+### PLATFORMS
 
 The following platforms can be used to host your Git repositories.
 
@@ -122,7 +129,7 @@ The following platforms can be used to host your Git repositories.
 | [Gitlab](https://gitlab.com)       | Free  |
 | [Bitbucket](https://bitbucket.org) | Free  |
 
-## GRAPHICAL USER INTERFACE (GUI) CLIENTS
+### GRAPHICAL USER INTERFACE (GUI) CLIENTS
 
 Is the command-line not for you? Try one of the following GUIs.
 
@@ -132,7 +139,7 @@ Is the command-line not for you? Try one of the following GUIs.
 | [Source Tree](https://www.sourcetreeapp.com) | Mac and Windows   | Free            |
 | [Tower](https://www.git-tower.com)           | MacOS and Windows | 59 USD per year |
 
-## RESOURCES
+### RESOURCES
 
 -   [GitBook](https://book.git-scm.com)
 -   [Git Flow](https://guides.github.com/introduction/flow/)
