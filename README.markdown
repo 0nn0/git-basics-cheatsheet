@@ -4,10 +4,10 @@ This cheatsheet is a list of our most used Git commands and useful information f
 
 It is available in a few languages. Since the translation rely on volunteers, the content between the available languages may vary. Choose one below:
 
-- [English Version](#english-version)
-- [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
+-   [English Version](#english-version)
+-   [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
 
-*In case you've missed, there's a list of our most used commands and shortcuts in the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet).*
+_In case you've missed, there's a list of our most used commands and shortcuts in the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet)._
 
 ## English Version
 
@@ -141,5 +141,6 @@ Is the command-line not for you? Try one of the following GUIs.
 
 ### RESOURCES
 
+-   [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
 -   [GitBook](https://book.git-scm.com)
 -   [Git Flow](https://guides.github.com/introduction/flow/)
