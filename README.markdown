@@ -141,6 +141,7 @@ Is the command-line not for you? Try one of the following GUIs.
 
 ### RESOURCES
 
+-   [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 -   [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
 -   [GitBook](https://book.git-scm.com)
 -   [Git Flow](https://guides.github.com/introduction/flow/)
