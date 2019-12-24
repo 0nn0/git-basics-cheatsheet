@@ -1,4 +1,4 @@
-# Git Basics Cheatsheet
+﻿# Git Basics Cheatsheet
 
 This cheatsheet is a list of our most used Git commands and useful information for those who are getting started.
 
@@ -77,7 +77,8 @@ _In case you've missed, there's a list of our most used commands and shortcuts i
 | git merge [branch]       | Merge [branch] into current branch |
 | git branch -d [branch]   | Deletes the [branch]               |
 | git push origin [branch] | Push [branch] to remote            |
-
+| git branch -r            | to see how many branch you have in 
+                              GitHub Repo   
 ### REMOTE REPOSITORIES
 
 | Key/Command                | Description                        |
