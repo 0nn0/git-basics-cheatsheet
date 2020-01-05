@@ -4,8 +4,8 @@ This cheatsheet is a list of our most used Git commands and useful information f
 
 It is available in a few languages. Since the translation rely on volunteers, the content between the available languages may vary. Choose one below:
 
--   [English Version](#english-version)
--   [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
+- [English Version](#english-version)
+- [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
 
 _In case you've missed, there's a list of our most used commands and shortcuts in the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet)._
 
@@ -77,8 +77,10 @@ _In case you've missed, there's a list of our most used commands and shortcuts i
 | git merge [branch]       | Merge [branch] into current branch |
 | git branch -d [branch]   | Deletes the [branch]               |
 | git push origin [branch] | Push [branch] to remote            |
-| git branch -r            | to see how many branch you have in 
-                              GitHub Repo   
+| git branch               | Lists local branches               |
+| git branch -r            | Lists remote branches              |
+| git branch -a            | Lists local and remote branches    |
+
 ### REMOTE REPOSITORIES
 
 | Key/Command                | Description                        |
@@ -104,10 +106,10 @@ You can list files/directories that you want to explicitely exclude from Git in 
 
 You might want to exclude:
 
--   Dependency caches such as /node_modules
--   Build output directories such as /build
--   Hidden system files such as .DS_Store
--   Personal IDE config files
+- Dependency caches such as /node_modules
+- Build output directories such as /build
+- Hidden system files such as .DS_Store
+- Personal IDE config files
 
 Example `.gitignore` file:
 
@@ -142,8 +144,8 @@ Is the command-line not for you? Try one of the following GUIs.
 
 ### RESOURCES
 
--   [Learn Git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
--   [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
--   [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
--   [GitBook](https://book.git-scm.com)
--   [Git Flow](https://guides.github.com/introduction/flow/)
+- [Learn Git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
+- [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+- [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
+- [GitBook](https://book.git-scm.com)
+- [Git Flow](https://guides.github.com/introduction/flow/)
