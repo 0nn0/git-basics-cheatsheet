@@ -2,18 +2,18 @@
 
 Esta cheatsheet é uma lista dos comandos Git mais usados por nós, além de conter informações úteis para quem está começando.
 
-*Quer aprender mais sobre o terminal? Há uma lista dos comandos e atalhos mais usados por nós no [Terminal do Mac](https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Português).*
+_Quer aprender mais sobre o terminal? Há uma lista dos comandos e atalhos mais usados por nós no [Terminal do Mac](https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Português)._
 
 ## Glossário
 
 | Palavra-chave              | Descrição                                                                                                |
 | -------------------------- | -------------------------------------------------------------------------------------------------------- |
 | git                        | Sistema de controle de versão distribuída de código aberto usado para armazenar código em repositórios   |
-| GitHub, GitLab e Bitbucket | Plataformas para hospedagem de repositórios Git                                                           |
-| staging                    | Arquivos ou diretórios que você deseja *commitar*                                                        |
-| commit                     | Salva todos os arquivos ou diretórios *staged* no seu repositório local                                  |
+| GitHub, GitLab e Bitbucket | Plataformas para hospedagem de repositórios Git                                                          |
+| staging                    | Arquivos ou diretórios que você deseja _commitar_                                                        |
+| commit                     | Salva todos os arquivos ou diretórios _staged_ no seu repositório local                                  |
 | branch                     | Ramifica o desenvolvimento de forma independente para que recursos possam ser desenvolvidos isoladamente |
-| clone                      | Clona os *commits* e as *branches* da versão remota do repositório para uma nova versão local            |
+| clone                      | Clona os _commits_ e as _branches_ da versão remota do repositório para uma nova versão local            |
 | remote                     | Versão remota e comum a todos os colaboradores                                                           |
 | fork                       | Copia um repositório pertencente a outro usuário gerando um repositório em seu nome                      |
 | pull request               | Solicita a fundição de suas contribuições a um repositório                                               |
@@ -23,71 +23,74 @@ Esta cheatsheet é uma lista dos comandos Git mais usados por nós, além de con
 
 | Comando                                   | Descrição                                                              |
 | ----------------------------------------- | ---------------------------------------------------------------------- |
-| `git config --global user.name [nome]`    | Define o nome do autor a ser usado em todas as *commits*               |
-| `git config --global user.email [e-mail]` | Define o endereço de e-mail do autor a ser usado em todas as *commits* |
+| `git config --global user.name [nome]`    | Define o nome do autor a ser usado em todas as _commits_               |
+| `git config --global user.email [e-mail]` | Define o endereço de e-mail do autor a ser usado em todas as _commits_ |
 | `git config color.ui true`                | Altera a cor da UI do terminal                                         |
 
 ## Comandos Principais
 
 | Comando                      | Descrição                                                                                 |
-| ---------------------------  | ----------------------------------------------------------------------------------------- |
+| ---------------------------- | ----------------------------------------------------------------------------------------- |
 | `git init [diretório]`       | Cria um novo repositório local                                                            |
 | `git clone [repo]`           | Cria uma cópia local do repositório remoto                                                |
-| `git add [diretório]`        | Prepara o diretório para o *commit*                                                       |
-| `git add [arquivo]`          | Prepara o arquivo para o *commit*                                                         |
-| `git add -A`                 | Prepara todos os arquivos alterados para o *commit*                                       |
-| `git add .`                  | Prepara os arquivos novos e os com modificação e ignora os deletados para o *commit*      |
-| `git add -u`                 | Prepara os arquivos deletados e os com modificação e ignora os novos para o *commit*      |
-| `git commit -m "[mensagem]"` | *Commita* todos os arquivos e diretórios que foram preparados para o *commit*             |
+| `git add [diretório]`        | Prepara o diretório para o _commit_                                                       |
+| `git add [arquivo]`          | Prepara o arquivo para o _commit_                                                         |
+| `git add -A`                 | Prepara todos os arquivos alterados para o _commit_                                       |
+| `git add .`                  | Prepara os arquivos novos e os com modificação e ignora os deletados para o _commit_      |
+| `git add -u`                 | Prepara os arquivos deletados e os com modificação e ignora os novos para o _commit_      |
+| `git commit -m "[mensagem]"` | _Commita_ todos os arquivos e diretórios que foram preparados para o _commit_             |
 | `git status`                 | Mostra o status dos arquivos ou diretórios como não rastreados, modificados ou preparados |
 
 ## Sincronização de Alterações
 
 | Comando     | Descrição                                                                          |
 | ----------- | ---------------------------------------------------------------------------------- |
-| `git fetch` | Baixa todo o histórico das *branches* remotas                                      |
-| `git merge` | Anexa a *branch* remota na *branch* local                                          |
-| `git pull`  | Atualiza a *branch* local com os novos *commits* da *branch* remota correspondente |
-| `git push`  | Envia todos os *commits* locais para o repositório remoto                          |
+| `git fetch` | Baixa todo o histórico das _branches_ remotas                                      |
+| `git merge` | Anexa a _branch_ remota na _branch_ local                                          |
+| `git pull`  | Atualiza a _branch_ local com os novos _commits_ da _branch_ remota correspondente |
+| `git push`  | Envia todos os _commits_ locais para o repositório remoto                          |
 
-*Dica: `git pull` é a combinação de `git fetch` com `git merge`*
+_Dica: `git pull` é a combinação de `git fetch` com `git merge`_
 
 ## Desfazer Alterações
 
 | Comando                     | Descrição                                                                 |
 | --------------------------- | ------------------------------------------------------------------------- |
-| `git checkout -- [arquivo]` | Substitue o arquivo pelo conteúdo da *HEAD*                               |
-| `git revert [commit]`       | Cria um novo *commit* que desfaz as alterações feitas em [commit]         |
+| `git checkout -- [arquivo]` | Substitue o arquivo pelo conteúdo da _HEAD_                               |
+| `git revert [commit]`       | Cria um novo _commit_ que desfaz as alterações feitas em [commit]         |
 | `git reset [arquivo]`       | Remove o [arquivo] da área de preparação                                  |
 | `git reset --hard HEAD`     | Remove todas as alterações locais no diretório de trabalho atual          |
-| `git reset --hard [commit]` | Redefine o *HEAD* para o *commit* anterior e descarta todas as alterações |
+| `git reset --hard [commit]` | Redefine o _HEAD_ para o _commit_ anterior e descarta todas as alterações |
 
 ## Branches
 
 | Comando                    | Descrição                                  |
 | -------------------------- | ------------------------------------------ |
-| `git branch [branch]`      | Cria uma nova *branch*                     |
-| `git checkout [branch]`    | Vai à *branch*                             |
-| `git checkout [branch] -b` | Cria e vai à nova *branch*                 |
-| `git merge [branch]`       | Anexa a *branch* [branch] à *branch* atual |
-| `git branch -D [branch]`   | Deleta a *branch*                          |
-| `git push origin [branch]` | Envia a *branch* para o repositório remoto |
+| `git branch [branch]`      | Cria uma nova _branch_                     |
+| `git checkout [branch]`    | Vai à _branch_                             |
+| `git checkout [branch] -b` | Cria e vai à nova _branch_                 |
+| `git merge [branch]`       | Anexa a _branch_ [branch] à _branch_ atual |
+| `git branch -D [branch]`   | Deleta a _branch_                          |
+| `git push origin [branch]` | Envia a _branch_ para o repositório remoto |
+| `git branch`               | Lista as _branches_ locais                 |
+| `git branch -r`            | Lista as _branches_ remotas                |
+| `git branch -a`            | Lista as _branches_ locais e remotas       |
 
 ## Histórico
 
 | Comando                    | Descrição                                                           |
 | -------------------------- | ------------------------------------------------------------------- |
-| `git log`                  | Lista o histórico de versões da *branch* atual                      |
-| `git log --author=[nome]`  | Lista o histórico de versões da *branch* atual filtrada por autor   |
-| `git log --pretty=oneline` | Lista o histórico de versões da *branch* atual de forma compacta    |
-| `git show [commit]`        | Lista os metadados e alterações feitas em um *commit* específico    |
-| `git blame [arquivo]`      | Mostra quem fez alterações em um arquivo e quando elas foram feitas |         |
+| `git log`                  | Lista o histórico de versões da _branch_ atual                      |
+| `git log --author=[nome]`  | Lista o histórico de versões da _branch_ atual filtrada por autor   |
+| `git log --pretty=oneline` | Lista o histórico de versões da _branch_ atual de forma compacta    |
+| `git show [commit]`        | Lista os metadados e alterações feitas em um _commit_ específico    |
+| `git blame [arquivo]`      | Mostra quem fez alterações em um arquivo e quando elas foram feitas |
 
 ## Gitignore
 
 You can list files/directories that you want to explicitely exclude from Git in a `.gitignore` file. This file should be placed at the root of your repository.
 
-Adicionar o arquivo reservado para o sistema `.gitignore` ao seu diretório permite que você opte pela exclusão de certos arquivos de futuros *commits*. Este arquivo deve ficar sempre na raiz do seu repositório.
+Adicionar o arquivo reservado para o sistema `.gitignore` ao seu diretório permite que você opte pela exclusão de certos arquivos de futuros _commits_. Este arquivo deve ficar sempre na raiz do seu repositório.
 
 Nota-se que muita gente costuma excluir caches de dependência, como o `node_modules`, arquivos de sistema, como o `DS_Store`, entre diversos outros.
 
@@ -97,15 +100,15 @@ Você pode ver o `.gitignore` [deste repositório](https://github.com/0nn0/git-b
 
 As plataformas abaixo são exemplos que podem ser usados para hospedar seus repositórios.
 
-| Plataforma                         | Preço   |
-| ---------------------------------- | ------- |
-| [GitHub](https://github.com)       | Grátis  |
-| [GitLab](https://gitlab.com)       | Grátis  |
-| [Bitbucket](https://bitbucket.org) | Grátis  |
+| Plataforma                         | Preço  |
+| ---------------------------------- | ------ |
+| [GitHub](https://github.com)       | Grátis |
+| [GitLab](https://gitlab.com)       | Grátis |
+| [Bitbucket](https://bitbucket.org) | Grátis |
 
 ## Cliente de Interface do Usuário (GUI)
 
-O terminal não é sua praia? Tenta um dos clientes abaixo.
+O terminal não é a sua praia? Experimente um dos clientes abaixo.
 
 | Nome                                        | Sistema Operacional | Preço     |
 | ------------------------------------------- | ------------------- | --------- |
