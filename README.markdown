@@ -145,5 +145,6 @@ Is the command-line not for you? Try one of the following GUIs.
 -   [Learn Git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
 -   [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 -   [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
--   [GitBook](https://book.git-scm.com)
+-   [*Pro Git*](https://book.git-scm.com/book/en/v2)
 -   [Git Flow](https://guides.github.com/introduction/flow/)
+-   [Git and Github in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english)
