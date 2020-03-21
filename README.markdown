@@ -79,6 +79,9 @@ _In case you've missed, there's a list of our most used commands and shortcuts i
 | `git merge [branch]`       | Merge [branch] into current branch |
 | `git branch -d [branch]`   | Deletes the [branch]               |
 | `git push origin [branch]` | Push [branch] to remote            |
+| `git branch`               | Lists local branches               |
+| `git branch -r`            | Lists remote branches              |
+| `git branch -a`            | Lists local and remote branches    |
 
 ### History
 
