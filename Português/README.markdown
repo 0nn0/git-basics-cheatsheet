@@ -2,7 +2,7 @@
 
 Esta cheatsheet é uma lista dos comandos Git mais usados por nós, além de conter informações úteis para quem está começando.
 
-*Quer aprender mais sobre o terminal? Há uma lista dos comandos e atalhos mais usados por nós no [Terminal do Mac](https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Português).*
+*Quer aprender mais sobre o terminal? Há uma lista dos comandos e atalhos mais usados por nós no [Terminal do macOS](https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Português).*
 
 ## Glossário
 
@@ -70,7 +70,7 @@ Esta cheatsheet é uma lista dos comandos Git mais usados por nós, além de con
 | `git checkout [branch]`    | Vai à *branch*                             |
 | `git checkout [branch] -b` | Cria e vai à nova *branch*                 |
 | `git merge [branch]`       | Anexa a *branch* [branch] à *branch* atual |
-| `git branch -D [branch]`   | Deleta a *branch*                          |
+| `git branch -d [branch]`   | Deleta a *branch*                          |
 | `git push origin [branch]` | Envia a *branch* para o repositório remoto |
 
 ## Histórico
@@ -79,17 +79,15 @@ Esta cheatsheet é uma lista dos comandos Git mais usados por nós, além de con
 | -------------------------- | ------------------------------------------------------------------- |
 | `git log`                  | Lista o histórico de versões da *branch* atual                      |
 | `git log --author=[nome]`  | Lista o histórico de versões da *branch* atual filtrada por autor   |
-| `git log --pretty=oneline` | Lista o histórico de versões da *branch* atual de forma compacta    |
+| `git log --oneline`        | Lista o histórico de versões da *branch* atual de forma compacta    |
 | `git show [commit]`        | Lista os metadados e alterações feitas em um *commit* específico    |
 | `git blame [arquivo]`      | Mostra quem fez alterações em um arquivo e quando elas foram feitas |         |
 
 ## Gitignore
 
-You can list files/directories that you want to explicitely exclude from Git in a `.gitignore` file. This file should be placed at the root of your repository.
-
 Adicionar o arquivo reservado para o sistema `.gitignore` ao seu diretório permite que você opte pela exclusão de certos arquivos de futuros *commits*. Este arquivo deve ficar sempre na raiz do seu repositório.
 
-Nota-se que muita gente costuma excluir caches de dependência, como o `node_modules`, arquivos de sistema, como o `DS_Store`, entre diversos outros.
+Nota-se que muita gente costuma excluir caches de dependência, como o `node_modules`, arquivos de sistema, como o `.DS_Store`, entre diversos outros.
 
 Você pode ver o `.gitignore` [deste repositório](https://github.com/0nn0/git-basics-cheatsheet/blob/master/.gitignore) ou [mais exemplos](https://github.com/github/gitignore) do GitHub.
 
@@ -97,17 +95,17 @@ Você pode ver o `.gitignore` [deste repositório](https://github.com/0nn0/git-b
 
 As plataformas abaixo são exemplos que podem ser usados para hospedar seus repositórios.
 
-| Plataforma                         | Preço   |
-| ---------------------------------- | ------- |
-| [GitHub](https://github.com)       | Grátis  |
-| [GitLab](https://gitlab.com)       | Grátis  |
-| [Bitbucket](https://bitbucket.org) | Grátis  |
+| Plataforma                         | Preço  |
+| ---------------------------------- | ------ |
+| [GitHub](https://github.com)       | Grátis |
+| [GitLab](https://gitlab.com)       | Grátis |
+| [Bitbucket](https://bitbucket.org) | Grátis |
 
 ## Cliente de Interface do Usuário (GUI)
 
-O terminal não é sua praia? Tenta um dos clientes abaixo.
+O terminal não é sua praia? Use um dos clientes abaixo.
 
-| Nome                                        | Sistema Operacional | Preço     |
+| Cliente                                     | Sistema Operacional | Preço     |
 | ------------------------------------------- | ------------------- | --------- |
 | [GitHub](https://desktop.github.com)        | macOS e Windows     | Grátis    |
 | [Sourcetree](https://www.sourcetreeapp.com) | macOS e Windows     | Grátis    |
