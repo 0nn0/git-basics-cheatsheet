@@ -72,6 +72,9 @@ Esta cheatsheet é uma lista dos comandos Git mais usados por nós, além de con
 | `git merge [branch]`       | Anexa a *branch* [branch] à *branch* atual |
 | `git branch -d [branch]`   | Deleta a *branch*                          |
 | `git push origin [branch]` | Envia a *branch* para o repositório remoto |
+| `git branch`               | Lista as *branches* locais                 |
+| `git branch -r`            | Lista as *branches* remotas                |
+| `git branch -a`            | Lista as *branches* locais e remotas       |
 
 ## Histórico
 
