@@ -1,149 +1,127 @@
-﻿# Git Basics Cheatsheet
+﻿# Git Cheatsheet (Basics)
 
-This cheatsheet is a list of our most used Git commands and useful information for those who are getting started.
+This cheatsheet is a list of our most used Git commands, and it countains useful information for those who are getting started.
 
-It is available in a few languages. Since the translation rely on volunteers, the content between the available languages may vary. Choose one below:
+It is available in the languages above. Since the translation rely on volunteers, the content between the available languages may vary.
 
--   [English Version](#english-version)
--   [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
+- [English Version](#english-version)
+- [Versão em Português](https://github.com/0nn0/git-basics-cheatsheet/tree/master/Português)
 
-_In case you've missed, there's a list of our most used commands and shortcuts in the [Terminal for Mac](https://github.com/0nn0/terminal-mac-cheatsheet)._
+_In case you've missed, there's a list of our most used commands and shortcuts in the [Terminal for macOS](https://github.com/0nn0/terminal-mac-cheatsheet)._
 
 ## English Version
 
-### GLOSSARY
+### Glossary
 
-| Keywords                | Description                                                                                                             |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| git                     | Open-source distributed version-control system, used to store code in repositories                                      |
-| GitHub/Gitlab/Bitbucket | Platform for hosting and collaborating on Git repositories                                                              |
-| staging                 | Proposed files/directories that you'd like to commit                                                                    |
-| commit                  | Saving all staged files/directories to your local repository                                                            |
-| branch                  | An independent line of development, so you can develop features isolated from each other. Master branch is the default. |
-| clone                   | Local version of a repository, including all commits and branches                                                       |
-| remote                  | Common repository on eg. Github that all team members to keep that changes in sync with                                 |
-| fork                    | Copy of a repository owned by a different user                                                                          |
-| pull request            | A method of submitting contributions to a repository                                                                    |
-| HEAD                    | Representing your current working directory                                                                             |
+| Keywords                     | Description                                                                                                             |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| git                          | Open-source distributed version-control system, used to store code in repositories                                      |
+| GitHub, GitLab and Bitbucket | Platform for hosting and collaborating on Git repositories                                                              |
+| staging                      | Proposed files/directories that you'd like to commit                                                                    |
+| commit                       | Saving all staged files/directories to your local repository                                                            |
+| branch                       | An independent line of development, so you can develop features isolated from each other. Master branch is the default. |
+| clone                        | Local version of a repository, including all commits and branches                                                       |
+| remote                       | Common repository on eg. Github that all team members to keep that changes in sync with                                 |
+| fork                         | Copy of a repository owned by a different user                                                                          |
+| pull request                 | A method of submitting contributions to a repository                                                                    |
+| HEAD                         | Represents your current working directory                                                                               |
 
-### CONFIGURE
+### Configuration
 
-| Key/Command                            | Description                                         |
-| -------------------------------------- | --------------------------------------------------- |
-| git config --global user.name [name]   | Set author name to be used for all commits          |
-| git config --global user.email [email] | Set author email to be used for all commits         |
-| git config color.ui true               | Enables helpful colorization of command line output |
+| Key/Command                              | Description                                         |
+| ---------------------------------------- | --------------------------------------------------- |
+| `git config --global user.name [name]`   | Set author name to be used for all commits          |
+| `git config --global user.email [email]` | Set author email to be used for all commits         |
+| `git config color.ui true`               | Enables helpful colorization of command line output |
 
-### CORE COMMANDS
+### Core Commands
 
-| Key/Command               | Description                                              |
-| ------------------------- | -------------------------------------------------------- |
-| git init [directory]      | Creates new local repository                             |
-| git clone [repo]          | Creates local copy of remote repository                  |
-| git add [directory]       | Stages specific [directory]                              |
-| git add [file]            | Stages specific [file]                                   |
-| git add -A                | Stages all changed files                                 |
-| git add .                 | Stages new and changed files, NOT deleted files          |
-| git add -u                | Stages changed and deleted files, NOT new files          |
-| git commit -m "[message]" | Commit everything that is staged                         |
-| git status                | Shows status of changes as untracked, modified or staged |
+| Key/Command                 | Description                                              |
+| --------------------------- | -------------------------------------------------------- |
+| `git init [directory]`      | Creates new local repository                             |
+| `git clone [repo]`          | Creates local copy of remote repository                  |
+| `git add [directory]`       | Stages specific [directory]                              |
+| `git add [file]`            | Stages specific [file]                                   |
+| `git add -A`                | Stages all changed files                                 |
+| `git add .`                 | Stages new and changed files, NOT deleted files          |
+| `git add -u`                | Stages changed and deleted files, NOT new files          |
+| `git commit -m "[message]"` | Commit everything that is staged                         |
+| `git status`                | Shows status of changes as untracked, modified or staged |
 
-### SYNCHRONIZE CHANGES
+### Synchronization of Changes
 
-| Key/Command | Description                                                                                                                                        |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| git fetch   | Downloads all history from the remote branches                                                                                                     |
-| git merge   | Merges remote branch into current local branch                                                                                                     |
-| git pull    | Updates local working branch with all new commits from the corresponding remote branch. `git pull` is a combination of `git fetch` and `git merge` |
-| git push    | Pushes all local branch commits to remote repository                                                                                               |
+| Key/Command   | Description                                                                           |
+| ------------- | ------------------------------------------------------------------------------------- |
+| `git fetch`   | Downloads all history from the remote branches                                        |
+| `git merge`   | Merges remote branch into current local branch                                        |
+| `git pull`    | Downloads all history from the remote branch and merges into the current local branch |
+| `git push`    | Pushes all the commits from the current local branch to its remote equivalent         |
 
-### UNDO CHANGES
+*Tip: `git pull` is the combination of `git fetch` and `git merge`*
 
-| Key/Command               | Description                                                                                 |
-| ------------------------- | ------------------------------------------------------------------------------------------- |
-| git checkout -- [file]    | Replace file with contents from HEAD                                                        |
-| git revert [commit]       | Create new commit that undoes changes made in [commit], then apply it to the current branch |
-| git reset [file]          | Remove [file] from staging area                                                             |
-| git reset --hard HEAD     | Removes all local changes in working directory                                              |
-| git reset --hard [commit] | Reset your HEAD pointer to previous commit and discard all changes since then               |
+### Undo Changes
 
-### BRANCHES
+| Key/Command                 | Description                                                                                 |
+| --------------------------- | ------------------------------------------------------------------------------------------- |
+| `git checkout -- [file]`    | Replace file with contents from HEAD                                                        |
+| `git revert [commit]`       | Create new commit that undoes changes made in [commit], then apply it to the current branch |
+| `git reset [file]`          | Remove [file] from staging area                                                             |
+| `git reset --hard HEAD`     | Removes all local changes in working directory                                              |
+| `git reset --hard [commit]` | Reset your HEAD pointer to previous commit and discard all changes since then               |
 
-| Key/Command              | Description                        |
-| ------------------------ | ---------------------------------- |
-| git branch [branch]      | Create a new branch                |
-| git checkout [branch]    | Switch to that branch              |
-| git checkout [branch] -b | Create and checkout new branch     |
-| git merge [branch]       | Merge [branch] into current branch |
-| git branch -d [branch]   | Deletes the [branch]               |
-| git push origin [branch] | Push [branch] to remote            |
-| git branch -r            | to see how many branch you have in 
-                              GitHub Repo   
-### REMOTE REPOSITORIES
+### Branches
 
 | Key/Command                | Description                        |
 | -------------------------- | ---------------------------------- |
-| git remote add [name][url] | Switch to that branch              |
-| git fetch [remote][branch] | Merge [branch] into current branch |
-| git pull [remote]          | Switch to that branch              |
-| git push [remote][branch]  | Create and checkout new branch     |
+| `git branch [branch]`      | Create a new branch                |
+| `git checkout [branch]`    | Switch to that branch              |
+| `git checkout [branch] -b` | Create and checkout new branch     |
+| `git merge [branch]`       | Merge [branch] into current branch |
+| `git branch -d [branch]`   | Deletes the [branch]               |
+| `git push origin [branch]` | Push [branch] to remote            |
 
-### HISTORY
+### History
 
-| Key/Command              | Description                                                      |
-| ------------------------ | ---------------------------------------------------------------- |
-| git log                  | Lists version history for the current branch                     |
-| git log --author=[name]  | Lists version history for the current branch from certain author |
-| git log --pretty=oneline | Lists compressed version history for the current branch          |
-| git show [commit]        | Outputs metadata and content changes of the specified commit     |
-| git blame [file]         | Shows who changed what and when in file                          |
+| Key/Command                | Description                                                      |
+| -------------------------- | ---------------------------------------------------------------- |
+| `git log`                  | Lists version history for the current branch                     |
+| `git log --author=[name]`  | Lists version history for the current branch from certain author |
+| `git log --oneline`        | Lists compressed version history for the current branch          |
+| `git show [commit]`        | Outputs metadata and content changes of the specified commit     |
+| `git blame [file]`         | Shows who changed what and when in file                          |
 
-### THE .gitignore FILE
+### Gitignore
 
 You can list files/directories that you want to explicitely exclude from Git in a `.gitignore` file. This file should be placed at the root of your repository.
 
-You might want to exclude:
+It is noted that people usually exclude dependency caches, such as `node_modules`, system files, such as `.DS_Store`, among others.
 
--   Dependency caches such as /node_modules
--   Build output directories such as /build
--   Hidden system files such as .DS_Store
--   Personal IDE config files
+You can see the `.gitignore` file of [this repository](https://github.com/0nn0/git-basics-cheatsheet/blob/master/.gitignore) or [more examples](https://github.com/github/gitignore) provided by GitHub.
 
-Example `.gitignore` file:
+### Platforms
 
-```
-# Comment in gitignore
-node_modules/
-.cache/
-dist/
-```
+The following platforms can be used to host your repositories.
 
-See [more examples](https://github.com/github/gitignore)
-
-### PLATFORMS
-
-The following platforms can be used to host your Git repositories.
-
-| NAME                               | PRICE |
+| Platform                           | Price |
 | ---------------------------------- | ----- |
-| [Github](https://github.com)       | Free  |
-| [Gitlab](https://gitlab.com)       | Free  |
+| [GitHub](https://github.com)       | Free  |
+| [GitLab](https://gitlab.com)       | Free  |
 | [Bitbucket](https://bitbucket.org) | Free  |
 
-### GRAPHICAL USER INTERFACE (GUI) CLIENTS
+### Graphical User Interface (GUI)
 
-Is the command-line not for you? Try one of the following GUIs.
+Is the command-line interface not for you? Try one of the following clients.
 
-| NAME                                         | OS                | PRICE           |
-| -------------------------------------------- | ----------------- | --------------- |
-| [Github](https://desktop.github.com)         | Mac and Windows   | Free            |
-| [Source Tree](https://www.sourcetreeapp.com) | Mac and Windows   | Free            |
-| [Tower](https://www.git-tower.com)           | MacOS and Windows | 59 USD per year |
+| Clients                                      | Operational System | Price      |
+| -------------------------------------------- | ------------------ | ---------- |
+| [Github](https://desktop.github.com)         | Mac and Windows    | Free       |
+| [Source Tree](https://www.sourcetreeapp.com) | Mac and Windows    | Free       |
+| [Tower](https://www.git-tower.com)           | MacOS and Windows  | $69 to $99 |
 
-### RESOURCES
+### Resources
 
--   [Learn Git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
--   [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
--   [Flight rules for Git](https://github.com/k88hudson/git-flight-rules) - What to do when things go wrong...
--   [GitBook](https://book.git-scm.com)
--   [Git Flow](https://guides.github.com/introduction/flow/)
+- [Learn Git Concepts](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
+- [Syncing a Fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+- [Flight Rules for Git](https://github.com/k88hudson/git-flight-rules)
+- [GitBook](https://book.git-scm.com)
+- [Git Flow](https://guides.github.com/introduction/flow/)
