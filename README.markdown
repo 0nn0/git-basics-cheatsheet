@@ -128,3 +128,4 @@ Is the command-line interface not for you? Try one of the following clients.
 -   [*Pro Git*](https://book.git-scm.com/book/en/v2)
 -   [Git Flow](https://guides.github.com/introduction/flow/)
 -   [Git and Github in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english)
+-   [Learn Git Version Control using Interactive Browser-Based Scenarios](https://www.katacoda.com/courses/git)
